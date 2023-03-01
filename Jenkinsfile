@@ -1,4 +1,7 @@
 pipeline {
+    parameters {
+        string(name: 'name', defaultValue: 'akbar', description: 'enter your name')
+    }
     environment {
         df_path = "${workspace}"
     }
